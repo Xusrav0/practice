@@ -19,3 +19,14 @@ git push origin master
 git pull origin master
 
 ```
+
+## Python Foundation
+
+- Primitive
+- Function
+- Object
+- Class
+- Class deep learning
+- Operation & Conditions
+- Loops
+- ...
