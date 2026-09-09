@@ -17,6 +17,7 @@ git commit -m "feat: INitial Setup"
 git remote add origin https://github_address
 git push origin master
 git pull origin master
+git checkout master - oxirgi commitga boradi
 
 ```
 
