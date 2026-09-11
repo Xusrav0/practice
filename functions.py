@@ -36,18 +36,32 @@ print("result2:", result2)  # return
 
 print("===== Keyword and default arguments =====")
 # Define
-
-
 def give_great(name, age=22):  # default argument
     print("give_great is executed")
     return f"Hi {name}, you are {age} years old!"
 
 
 # CALL
-
-# Keyword argument (buning maqsadi o'qilishini osonlashtirish uchun)
-result3 = give_great(name="Justin", age=28)
+result3 = give_great(name="Justin", age=28) # Keyword argument (buning maqsadi o'qilishini osonlashtirish uchun)
 print('result3:', result3)
 
 result4 = give_great("John")
 print('result4:', result4)
+
+print("===== Scope =====")
+b = 100 # 3 tashqaridan qidiradi
+
+# Define
+
+# def calculate(a, b): # 2 parametr dan izlab ko'radi
+#     c = a * b # 1 birinchi ichidan qidiradi
+#     print(f"the value: {c}")
+
+
+
+def calculate(a): 
+    c = a * b 
+    print(f"the value: {c}")
+
+# CALL
+calculate(5)
