@@ -32,3 +32,22 @@ print("result1:", result1)  # Void function None qaytaradi
 
 result2 = greeting("Justin")
 print("result2:", result2)  # return
+
+
+print("===== Keyword and default arguments =====")
+# Define
+
+
+def give_great(name, age=22):  # default argument
+    print("give_great is executed")
+    return f"Hi {name}, you are {age} years old!"
+
+
+# CALL
+
+# Keyword argument (buning maqsadi o'qilishini osonlashtirish uchun)
+result3 = give_great(name="Justin", age=28)
+print('result3:', result3)
+
+result4 = give_great("John")
+print('result4:', result4)
