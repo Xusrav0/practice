@@ -64,4 +64,5 @@ def calculate(a):
     print(f"the value: {c}")
 
 # CALL
-calculate(5)
+calculate(5) # bu holatda tashqaridagi b ni qiymatini oladi
+# calculate(5, 50) bo'lsa xatolik beradi chunki parametrda 2 ta argument berilgan
