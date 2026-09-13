@@ -35,17 +35,43 @@ print('===== Error handling system =====')
 
 car_dict = dict(name="Tayota", year=2026, electric=True)
 
+# try:
+#     print('passed here')
+#     a = car_dict.speed  # Attribute Error
+#     result = car_dict['origin']
+#     print('result:', result)
+# except KeyError as err:
+#     print('No origin state property found', err)
+# except AttributeError as err:
+#     print('No speed found', err)
+# else: 
+#     print('executed successfully without errors')   # try ni ichidagi hammasi ishga tushsa else ishlidi
+# finally:  # xatolikk sodir bolsa bolmasa ishga tushadi
+#     print('Final closing logic')
+
+
 try:
     print('passed here')
-    a = car_dict.speed  # Attribute Error
+    # a = car_dict.speed  
     result = car_dict['origin']
     print('result:', result)
-except KeyError as err:
-    print('No origin state property found', err)
-except AttributeError as err:
-    print('No speed found', err)   
+except (KeyError, AttributeError) as err:
+    print('Error', err)
 else: 
-    print('executed successfully without errors')   # try ni ichidagi hammasi ishga tushsa else ishlidi
-finally:  # xatolikk sodir bolsa bolmasa ishga tushadi
+    print('executed successfully without errors')   
+finally:  
     print('Final closing logic')
 
+
+# Exception
+try:
+    print('passed here')
+    a = car_dict.speed  
+    result = car_dict['origin']
+    print('result:', result)
+except Exception as err:
+    print('Error', err)
+else: 
+    print('executed successfully without errors')   
+finally:  
+    print('Final closing logic')
