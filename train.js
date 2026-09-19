@@ -1,3 +1,31 @@
+// TASK K:
+// Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
+// MASALAN: countVowels("string") return 1;
+
+function countVowels(str) {
+    let vowels = ["a", "e", "i", "o", "u", "y"];
+    let count = 0;
+
+    for (let char of str) {
+        if (vowels.includes(char.toLowerCase())) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countVowels("string"));
+// console.log(countVowels("University"));
+
+
+
+
+
+
+
+
+
 // TASK G:
 
 // Yagona parametrga ega function tuzing.
@@ -7,7 +35,7 @@
 // MASALAN: getHighestIndex([5, 21, 12, 21 ,8]); return qiladi 1 sonini
 // Yuqoridagi misolda, birinchi indeksda 21 joylashgan.
 // Va bu 21 soni arrayning tarkibidagi birinchi eng katta son hisobladi va bizga uning indeksi 1 qaytadi.
-
+/*
 function getHighestIndex(array) {
   let b = 0;
   let index = 0
@@ -21,7 +49,7 @@ function getHighestIndex(array) {
 }
 
 console.log(getHighestIndex([5, 21, 12, 21 ,8]))
-
+*/
 
 
 
