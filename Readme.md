@@ -26,8 +26,14 @@ git checkout master - oxirgi commitga boradi
 - Primitive
 - Function
 - Object
-- Class
-- Class deep learning
+- Class about
+- Class deep learndive > Encapsulation
+- Class deep learndive > Inheritance  Polymorphism
 - Operation & Conditions
 - Loops
+- Tuple
+- List
+- Array
+- Comprehension
+- Debugging
 - ...
