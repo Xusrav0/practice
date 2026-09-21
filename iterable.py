@@ -1,12 +1,12 @@
 print('===== Iterable objects & Range =====')
-# iterate (takrorlanish) objects => string dict tuple list range map filter
+# iterate (takrorlanish) objects => string dict tuple zip list range map filter
 
 
 text = "MIT"
 for letter in text:
     print(f"the letter: {letter}")
 
-range_obj = range(3) # [0:3)
+range_obj = range(3)  # [0:3)
 print("range_obj", range_obj)
 
 for ele in range_obj:
@@ -26,18 +26,19 @@ name = person_obj['name']
 print("name:", name)
 
 # Error beradi chunki hobby yo'q
-#name2 = person_obj['hobby']
-#print("name2:", name2)
+# name2 = person_obj['hobby']
+# print("name2:", name2)
 
 # method: get
 name2 = person_obj.get('name')
 hobby = person_obj.get("hobby")
 balance = person_obj.get("balance:", 0)
-print(f"the name: {name}, hobby: {hobby} and balance: {balance}") # hobby None chiqadi
+# hobby None chiqadi
+print(f"the name: {name}, hobby: {hobby} and balance: {balance}")
 
 # del oper
-del person_obj['single'] # single state o'chiriladi
+del person_obj['single']  # single state o'chiriladi
 
 for key in person_obj:
-    print(f"the key: {key} => value {person_obj[key]} ") # yoki {person_obj.get(key)} bir xil
-
+    # yoki {person_obj.get(key)} bir xil
+    print(f"the key: {key} => value {person_obj[key]} ")

@@ -77,9 +77,6 @@ introduce(name='Justin', age=25)
 introduce(name='Shawn', age=30, single=True)
 
 
-print('======= ZIP =======')
-
-
 def greeting(*args, **kwargs):
     print('*args:', args)
     print('*kwargs:', kwargs)
@@ -88,3 +85,13 @@ def greeting(*args, **kwargs):
 # call
 #       (    tuple     ) (    dictionary    )
 greeting('hi', True, 10, name='John', age=22)
+
+print('======= ZIP =======')
+# 2 ta tupleni bir xil indeksda joylashgan qiymatlarni olib beradi
+
+tuple1 = (1, 2, 3, 4)
+tuple2 = ('a', 'b', 'c')
+
+zipped = zip(tuple1, tuple2)
+result = list(zipped)
+print('result:', result)
