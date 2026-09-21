@@ -1,7 +1,37 @@
+
+// function reverseSentence(str){
+//   const words = str.split(" ")
+//   let newSentence = "";
+  
+//   for(let letter of words){
+//     letter = letter.split("").reverse().join("")
+//     newSentence = newSentence + " " + letter
+//   }
+//   return newSentence
+// }
+// const result = reverseSentence("we like coding");
+// console.log(result)
+
+
+
+/*  TASK L: 
+Shunday function yozing, u string qabul qilsin va string ichidagi 
+hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
+*/
+
+function reverseSentence(str) {
+  return str.split(' ').map(word => word.split('').reverse().join('')).join(' ')
+
+}
+
+
+console.log(reverseSentence("we like coding!"))
+
 // TASK K:
 // Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
 // MASALAN: countVowels("string") return 1;
-
+/*
 function countVowels(str) {
     let vowels = ["a", "e", "i", "o", "u", "y"];
     let count = 0;
@@ -19,7 +49,7 @@ console.log(countVowels("string"));
 // console.log(countVowels("University"));
 
 
-
+*/
 
 
 
