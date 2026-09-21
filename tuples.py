@@ -75,3 +75,16 @@ def introduce(**kwargs):
 # call
 introduce(name='Justin', age=25)
 introduce(name='Shawn', age=30, single=True)
+
+
+print('======= ZIP =======')
+
+
+def greeting(*args, **kwargs):
+    print('*args:', args)
+    print('*kwargs:', kwargs)
+
+
+# call
+#       (    tuple     ) (    dictionary    )
+greeting('hi', True, 10, name='John', age=22)
