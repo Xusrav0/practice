@@ -31,9 +31,9 @@ animals = ('dog', "cat", 'fish', "lion")
 tuple_obj = ('MIT', 100, True, None)
 
 print(animals[0])
-# animals[0] = 'bird'  error beradi chunki tuple qiymatini o'zgartirmaydi
+# animals[0] = 'bird'  # error beradi chunki tuple qiymatini o'zgartirmaydi
 
-# try avoid these
+# Avoid these
 people = 'Andrew', 'John'
 animals1 = 'dog',
 

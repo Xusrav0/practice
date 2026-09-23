@@ -33,7 +33,7 @@ print('d:', d)
 
 print('======= List methods =======')
 # methods > mutable => append() insert() pop() remove() clear() sort()
-# immutable => index()
+# immutable => index() sorted function
 
 letters = ['a', 'b', 'd']
 
@@ -92,7 +92,80 @@ print('sort default:', numbers)
 numbers.sort(reverse=True)
 print('sort reverse:', numbers)
 
-# immutable sorted
+# immutable > sorted function
 numbs = [2, 20, 12, 100]
 new_numbs = sorted(numbs)
 print(f'the sorted numbs: {numbs} and new_numbs: {new_numbs}')
+
+
+print('======= Lambda function =======')
+# Lambda is samll anonymous function!
+def calculate(x, y): return x * y
+
+
+result = calculate(3, 5)
+print('result:', result)
+
+people = [
+    ('Robert', 20),
+    ("Steve", 91),
+    ('Joseph', 35),
+    ("Michael", 30)
+]
+
+people.sort()
+print('paeople1:', people)
+
+# sort age with lambda
+
+people.sort(key=lambda person: person[1])
+print('paeople2:', people)
+
+print('======= enumerate, map and filter =======')
+# enumerate for index & value
+animals = ['dog', 'cat', 'fish']
+for ele in enumerate(animals):
+    print('ele', ele)
+
+for (index, value) in enumerate(animals):
+    print(f'the index: {index} and value: {value}')
+
+print('--------')
+
+# similar in dictionary
+car_obj = dict(brand="Ferrari", year=2025)
+result = car_obj.items()  # tuple qilib yoyib beradi
+for (key, value) in result:
+    print(f'the key: {key} and value: {value}')
+
+print('----------')
+# map()
+cars = [
+    ('Ferrari', 78),
+    ('Tayota', 87),
+    ('Audi', 116),
+    ('BMW', 109),
+    ('Pagani', 33)
+]
+
+# new_cars = []
+# for car in cars:
+#     new_cars.append(car[0])
+# print(new_cars) // result ['Ferrari', 'Tayota', 'Audi', 'BMW', 'Pagani']
+
+
+new_cars = []
+for car in cars:
+    new_cars.append(car[0])
+print('new car(1):', new_cars)
+
+result_map = map(lambda car: car[0], cars)
+print(f'the result_map: {result_map} and type: {type(result_map)}')
+new_cars = list(result_map)
+print('new_cars(2):', new_cars)
+
+# filter
+
+result_filter = filter(lambda car: car[1] > 80, cars)
+print(f'the result_map: {result_map} and type: {type(result_map)}')
+print(list(result_filter))
