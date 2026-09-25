@@ -167,5 +167,5 @@ print('new_cars(2):', new_cars)
 # filter
 
 result_filter = filter(lambda car: car[1] > 80, cars)
-print(f'the result_map: {result_map} and type: {type(result_map)}')
+print(f'the result_map: {result_filter} and type: {type(result_filter)}')
 print(list(result_filter))
