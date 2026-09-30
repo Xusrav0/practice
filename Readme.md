@@ -28,12 +28,22 @@ git checkout master - oxirgi commitga boradi
 - Object
 - Class about
 - Class deep learndive > Encapsulation
-- Class deep learndive > Inheritance  Polymorphism
+- Class deep learndive > Inheritance Polymorphism
 - Operation & Conditions
 - Loops
 - Tuple
 - List
 - Array
 - Comprehension
-- Debugging
-- ...
+- Packages and Debugging
+
+## pip commands:
+
+```
+windows pip | macOs pip3
+pip list
+pip install pillow
+pip uninstall pillow
+pip show pillow
+pip freeze > requirement.txt
+```
