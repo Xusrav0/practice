@@ -46,3 +46,18 @@ with Image.open("materials/FSD.jpg") as img_obj:
     resized_img = img_obj.resize((200, 200))
     resized_img.show()
     resized_img.save("materials/sample.png")
+
+print("===== Debugging =====")
+
+
+def get_summary(*args):  # DEFINE
+    total_amount = 0
+    for a in args:
+        total_amount += a
+    return total_amount  # find the bug via debugging
+
+
+# CALL
+test = 100
+result = get_summary(10, 20, 30, 40, 50)
+print("result:", result)
